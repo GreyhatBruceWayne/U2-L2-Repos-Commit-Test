@@ -16,5 +16,5 @@ if re.fullmatch(r"[A-Za-z]+", word):
         # subtract 66 (A's unicode number + 1) to get position in alphabet (common patten)
     print(number_word)
 else:
-    print("invalid argument given. use only A-Z a-z")
+    print("invalid argument given. Please use only A-Z a-z")
 
