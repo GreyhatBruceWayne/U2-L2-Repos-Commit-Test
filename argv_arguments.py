@@ -9,7 +9,7 @@ print(f'Welcome, you have run {program_name}. This will give you the letter numb
 #check valid letters, otherwise print error and end
 if re.fullmatch(r"[A-Za-z]+", word):
     number_word = ''
-    # iterate over word string characters
+    # iterate over word string characters to convert each character to a numeric position in the alphabet
     for letter in word:
         number_word += letter + "=" + str(ord(letter.upper()) - ord('A') + 1) + " "
         # use of unicode number (referencing ascii table) for letter (uppercase of letter)
